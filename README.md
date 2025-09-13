@@ -6,6 +6,7 @@ Powered by **Hyprland** and tuned for a smooth, distraction-free workflow.
 
 ![desktop](/assets/asset_2.png)
 ![apps](/assets/asset_1.png)
+![apps](/assets/asset_4.png)
 ![terminal](/assets/asset_3.png)
 
 
