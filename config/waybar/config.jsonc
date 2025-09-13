@@ -1,0 +1,142 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 4,
+  "margin-left": 4,
+  "margin-bottom": 0,
+  "margin-right": 4,
+  "exclusive-zone": false,
+  "height": 28,
+  "modules-left": [
+    "custom/logo",
+    "hyprland/window",
+    "custom/caps"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": ["group/pill"
+  ],
+  "group/pill": {
+    "orientation": "horizontal",
+    "modules":[
+      "pulseaudio",
+      "custom/separator-5",
+      "cpu",
+      "memory",
+      "custom/separator-4",
+      "custom/sensors",
+      "custom/separator-3",
+      "custom/mullvad",
+      "tray",
+      "custom/separator-2",
+      "clock",
+      "custom/separator-1",
+      "custom/power"
+
+    ]
+  },
+  "custom/logo": {
+    "format": "󰣇 ",
+    "tooltip": false
+  },
+  "hyprland/workspaces": {
+    "name": "workspaces",
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "active": ""
+    },
+    "persistent_workspaces": {
+      "*": 3
+    },
+    "on-click": "activate"
+  },
+
+
+
+
+"custom/mullvad": {
+  "exec": "~/.config/waybar/scripts/mullvad_status.sh",
+  "return-type": "json",
+  "interval": 2,
+  "tooltip": true
+},
+
+
+
+  "hyprland/window": {
+    "max-length": 40,
+    "separate-outputs": true
+  },
+
+ "custom/separator-6": {
+    "format": "",
+    "tooltip": false,
+    "interval": "once"
+  },
+  "custom/separator-1": {
+    "format": "",
+    "tooltip": false,
+    "interval": "once"
+  },
+  "custom/separator-2": {
+    "format": "",
+    "tooltip": false,
+    "interval": "once"
+  },
+   "custom/separator-3": {
+    "format": "",
+    "tooltip": false,
+    "interval": "once"
+  },
+   "custom/separator-4": {
+    "format": "",
+    "tooltip": false,
+    "interval": "once"
+  },
+   "custom/separator-5": {
+    "format": "",
+    "tooltip": false,
+    "interval": "once"
+  },
+  "clock": {
+    "format": " {:%H:%M  󰃭 %d-%m-%Y}"
+  },
+  "pulseaudio": {
+    "scroll-step": 1, // %, can be a float
+    "format": "{icon}{volume}% - {format_source}",
+    "format-muted": "󰝟  {format_source}",
+    "format-source": "",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphones": "󰋋 ",
+      "default": [
+        "󰕿 ",
+        "󰖀 ",
+        "󰕾 "
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "  {}%"
+  },
+  "custom/sensors": {
+    "exec": "~/.config/waybar/scripts/sensors.sh",
+    "interval": 5,
+    "return-type": "text"
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "/home/jeremy/.config/rofi/powermenu/type-2/powermenu.sh",
+    "tooltip": "Logout"
+  }
+}

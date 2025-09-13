@@ -1,0 +1,280 @@
+
+
+window#waybar {
+  background-color: #1d2021;
+  color: #fbf1c7;
+  border-radius: 10px;
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  font-size: 14px;
+  min-height: 30px;
+}
+
+
+#group-pill {
+
+  background-color: #1d2021;
+  border-radius: 10px;
+  padding-left: 8px;
+
+}
+
+
+#group-pill > * {
+
+  padding-left: 10px;
+  padding-right: 10px;
+  color:  #fbf1c7;
+}
+
+
+
+#group-pill > * {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+/* ========== MULLVAD ========== */
+#custom-mullvad {
+  padding: 0 12px;
+  font-weight: 600;
+  background-color: #3c3836;
+  color: #fbf1c7;
+
+}
+
+#custom-mullvad.disconnected {
+  color: #fb4834;      /* rojo oscuro */
+}
+#custom-mullvad.connected {     /* verde oscuro */
+  color: #8ec07c;
+}
+#custom-mullvad.blocked {
+  color: #fb4834;      /* rojo oscuro */
+}
+
+#custom-mullvad.connecting {
+  color: #fabd2f;      
+}
+
+#custom-mullvad.unknown {
+  color: #fbf1c7;     
+}
+
+
+/* ========== PULSEAUDIO ========== */
+#pulseaudio {
+  background-color: #83a598; 
+  color: #1d2021;
+  padding: 0 12px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+
+}
+
+
+#custom-separator-5 {
+  background-color:  #83a598;
+  color: #b8bb26;   
+  font-size: 20px;
+  padding: 0;
+}
+
+/* ========== CPU ========== */
+#cpu {
+  background-color: #b8bb26;
+  color: #1d2021;
+  padding: 0 12px;
+}
+
+/* ========== MEMORY ========== */
+#memory {
+  background-color: #fabd2f;  
+  color: #1f2335;
+  padding: 0 12px;
+}
+
+
+#custom-separator-4 {
+  background-color: #fabd2f;
+  color:  #fe8019;  
+  font-size: 20px;
+  padding: 0;
+}
+
+/* ========== SENSORS ========== */
+#custom-sensors {
+  background-color: #fe8019;
+  color:  #1d2021;
+  padding: 0 12px;
+}
+
+
+#custom-separator-3 {
+  background-color: #fe8019;
+  color:  #3c3836;  
+  font-size: 20px;
+  padding: 0;
+}
+
+/* ========== TRAY ========== */
+#tray {
+  background-color:  #3c3836;
+  padding: 0 8px;
+  color: #fbf1c7
+}
+
+
+#custom-separator-2 {
+  background-color:  #3c3836;
+  color: #282828;
+  font-size: 20px;
+  padding: 0;
+}
+
+/* ========== CLOCK ========== */
+#clock {
+  background-color: #282828;
+  color: #fbf1c7;
+  font-weight: 700;
+  padding: 0 12px;
+}
+
+/* ========== POWER ========== */
+#custom-power {
+  background-color: #1d2021;
+  color: #fb4834;
+  padding: 0 12px;
+  margin-right: 6px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+/* Separador-1 
+#custom-separator-1 {
+  background-color: #1d2021;
+  color: #1d2021;   rojo (power) 
+  font-size: 20px;
+  padding: 0;
+}
+*/
+
+#workspaces button {
+  padding: 0 6px;
+  margin: 3px 4px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #cccccc;
+}
+
+
+
+#workspaces button:hover:not(.active) {
+  background: rgba(0,0,0,0.9);
+}
+
+
+#workspaces button.urgent {
+  background-color: #fb4834;
+}
+
+#mode {
+  background-color: #64727d;
+}
+
+/* #clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-sensors,
+#tray,
+#mode,
+#idle_inhibitor
+{
+  padding: 0 10px;
+  margin: 6px 3px;
+  color: #cccccc;
+  background-color: #0B0B0B;
+}
+*/
+#window,
+#workspaces {
+  margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+
+
+
+
+
+#pulseaudio.muted {
+  color: #A93226;
+}
+
+
+
+
+#idle_inhibitor {
+  background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+  background-color: #ecf0f1;
+  color: #2d3436;
+}
+
+#mpd {
+  background-color: #66cc99;
+  color: #2a5c45;
+}
+
+#mpd.disconnected {
+  background-color: #f53c3c;
+}
+
+#mpd.stopped {
+  background-color: #90b1b1;
+}
+
+#mpd.paused {
+  background-color: #51a37a;
+}
+
+#custom-logo {
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #458588;
+  font-size: 20px;
+}
+/* #custom-power {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 5px;
+  color: #ffffff;
+}
+*/
+
+
+
+
+window#waybar #workspaces button.active,
+window#waybar #workspaces button.active label { color: #458588; }
+
