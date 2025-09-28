@@ -1,6 +1,6 @@
 -- ~/.config/nvim/lua/plugins/indent-blankline.lua
 return {
-  { "echasnovski/mini.indentscope", enabled = false }, -- evita guías duplicadas
+  { "nvim-mini/mini.indentscope", enabled = false }, -- evita guías duplicadas
 
   {
     "lukas-reineke/indent-blankline.nvim",

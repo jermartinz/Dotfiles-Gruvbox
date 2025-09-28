@@ -43,9 +43,15 @@
 # resize-overlay-duration = 4s 200ms
 shell-integration = fish
 confirm-close-surface = false
+font-family = DepartureMono Nerd Font Propo
+font-style = bold
+font-size = 12
 
-theme = GruvboxDarkHard
+theme = Gruvbox Dark Hard
 
-background-opacity= 0.5
+background-opacity= 0.9
 
 background-blur = true
+
+custom-shader = cursor-trail
+cursor-color = #ffffff

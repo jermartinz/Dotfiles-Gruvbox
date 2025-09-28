@@ -46,14 +46,14 @@ window#waybar {
 
 }
 
-#custom-mullvad.disconnected {
-  color: #fb4834;      /* rojo oscuro */
+/* #custom-mullvad.disconnected {
+  color: #fb4834;      
 }
-#custom-mullvad.connected {     /* verde oscuro */
+custom-mullvad.connected {     
   color: #8ec07c;
 }
 #custom-mullvad.blocked {
-  color: #fb4834;      /* rojo oscuro */
+  color: #fb4834;
 }
 
 #custom-mullvad.connecting {
@@ -63,7 +63,7 @@ window#waybar {
 #custom-mullvad.unknown {
   color: #fbf1c7;     
 }
-
+*/
 
 /* ========== PULSEAUDIO ========== */
 #pulseaudio {
@@ -143,24 +143,10 @@ window#waybar {
   padding: 0 12px;
 }
 
-/* ========== POWER ========== */
-#custom-power {
-  background-color: #1d2021;
-  color: #fb4834;
-  padding: 0 12px;
-  margin-right: 6px;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
-}
 
-/* Separador-1 
-#custom-separator-1 {
-  background-color: #1d2021;
-  color: #1d2021;   rojo (power) 
-  font-size: 20px;
-  padding: 0;
-}
-*/
+
+
+
 
 #workspaces button {
   padding: 0 6px;
