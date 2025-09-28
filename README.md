@@ -16,8 +16,8 @@ Powered by **Hyprland** and tuned for a smooth, distraction-free workflow.
 
 ## 🅰️ Fonts
 
-Shell: [DepartureMono Nerd Font Propo](https://www.nerdfonts.com/font-downloads)
-Waybar and system: [JetBrainsMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads)
+- Shell: [DepartureMono Nerd Font Propo](https://www.nerdfonts.com/font-downloads)
+- Waybar and system: [JetBrainsMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads)
 
 ---
 
