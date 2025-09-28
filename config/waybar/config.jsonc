@@ -50,18 +50,6 @@
     "on-click": "activate"
   },
 
-
-
-
-"custom/mullvad": {
-  "exec": "~/.config/waybar/scripts/mullvad_status.sh",
-  "return-type": "json",
-  "interval": 2,
-  "tooltip": true
-},
-
-
-
   "hyprland/window": {
     "max-length": 40,
     "separate-outputs": true
@@ -131,9 +119,4 @@
   "tray": {
     "spacing": 10
   },
-  "custom/power": {
-    "format": "⏻",
-    "on-click": "/home/jeremy/.config/rofi/powermenu/type-2/powermenu.sh",
-    "tooltip": "Logout"
-  }
 }

@@ -37,7 +37,7 @@ window#waybar {
 
 
 
-/* ========== MULLVAD ========== */
+/* ========== MULLVAD ==========
 #custom-mullvad {
   padding: 0 12px;
   font-weight: 600;
@@ -165,7 +165,7 @@ custom-mullvad.connected {
 
 
 #workspaces button.urgent {
-  background-color: #fb4834;
+  background: #fb4834;
 }
 
 #mode {
@@ -216,32 +216,6 @@ custom-mullvad.connected {
 
 
 
-
-#idle_inhibitor {
-  background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
-}
-
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #f53c3c;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
-}
 
 #custom-logo {
   margin-left: 5px;
